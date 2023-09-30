@@ -1,0 +1,75 @@
+.jumbotron-img {
+    width: 100%;
+    height: 400px;
+}
+
+.profile-container {
+    display:flex;
+    justify-content: space-around;
+}
+.profileImg{
+    justify-content: center;
+    align-items: center;
+}
+
+p button {
+    border-radius: 50%;
+    height: 50px;
+}
+  
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .mentorContainer,
+  .mentoreeContainer {
+    flex: 1;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+    .container-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .mentoree-header{
+    display:flex;
+    justify-content: center;
+  }
+  
+  

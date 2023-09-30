@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Join Us || City of Refuge</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">{City of Refuge Logo}</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mentorProgram.html"
+                >Mentor || Mentoree Program</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn-outline-success" type="submit">Donate</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container-title">
+      <h1>Join Us</h1>
+    </div>
+    <div class="mainContainer">
+      <div class="mentorContainer col-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://tinyurl.com/2p94ud5v"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mentor Program</h5>
+            <p class="card-text">
+              If you are interested in joining us and becoming one of the
+              mentors. Click Below
+            </p>
+            <a href="#" class="btn btn-primary" onclick="openMentorModal()"
+              >Become a Mentor</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="mentoreeContainer col-6">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://tinyurl.com/9e86zjkj"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Mentoree Program</h5>
+            <p class="card-text">
+              Looking for a mentor program? Become a mentoree and click below
+            </p>
+            <a href="mentoree.html" class="btn btn-primary"
+              >Become a Mentoree</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mentor Modal -->
+    <div
+      class="modal fade"
+      id="mentorModal"
+      tabindex="-1"
+      aria-labelledby="mentorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mentorModalLabel">Become a Mentor</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Add your mentor form content here -->
+            <section>
+              <div class="inner">
+                <div class="form-content">
+                  <p>Please fill with your details</p>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Age"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-secondary">Submit</button>
+            <!-- Add your mentor form submit button here if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mentoree Modal -->
+    <div
+      class="modal fade"
+      id="mentoreeModal"
+      tabindex="-1"
+      aria-labelledby="mentoreeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mentoreeModalLabel">
+              Become a Mentoree
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Add your mentoree form content here -->
+            <section>
+              <div class="inner">
+                <div class="form-content">
+                  <p>Please fill with your details</p>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-holder">
+                      <input
+                        type="text"
+                        placeholder="Age"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-secondary">Submit</button>
+            <!-- Add your mentoree form submit button here if needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function openMentorModal() {
+        var mentorModal = new bootstrap.Modal(
+          document.getElementById("mentorModal")
+        );
+        mentorModal.show();
+      }
+
+      function openMentoreeModal() {
+        var mentoreeModal = new bootstrap.Modal(
+          document.getElementById("mentoreeModal")
+        );
+        mentoreeModal.show();
+      }
+    </script>
+  </body>
+</html>
